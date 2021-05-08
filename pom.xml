@@ -10,9 +10,12 @@
 
     <properties>
         <java.version>14</java.version>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+<!--        <maven.compiler.source>14</maven.compiler.source>-->
+<!--        <maven.compiler.target>14</maven.compiler.target>-->
         <maven.compiler.verbose>true</maven.compiler.verbose>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -22,6 +25,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+
                 <version>3.8.1</version>
                 <configuration>
                     <release>8</release>
