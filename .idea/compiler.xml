@@ -9,8 +9,8 @@
         <module name="fourthTry" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14">
-      <module name="fourthTry" target="14" />
+    <bytecodeTargetLevel target="8">
+      <module name="fourthTry" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>
