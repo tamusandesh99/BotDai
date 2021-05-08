@@ -12,8 +12,8 @@ public class Main {
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.watching("Tero bau ko tauko"));
         jda.addEventListener(new commands());
-//        jda.addEventListener(new register());
-//        jda.addEventListener(new scrim());
+        jda.addEventListener(new register());
+        jda.addEventListener(new scrim());
     }
 }
 
