@@ -27,14 +27,12 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>14</release>
+                    <compilerArgs>
+                        <arg>--enable-preview</arg>
+                    </compilerArgs>
+                    <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                    <parameters>true</parameters>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.ow2.asm</groupId>
-                        <artifactId>asm</artifactId>
-                        <version>6.2</version> <!-- Use newer version of ASM -->
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
