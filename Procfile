@@ -1,1 +1,1 @@
-web: java -jar target/fourthTry-0.0.1-SNAPSHOT.jar
+web: java -jar \Users\sandeshgrg75\Desktop\fourthTry\target\fourthTry-1.0-SNAPSHOT
