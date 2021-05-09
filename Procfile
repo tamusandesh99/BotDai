@@ -1,1 +1,2 @@
-web: java -jar target/myapp.jar
+
+worker: java main.java
