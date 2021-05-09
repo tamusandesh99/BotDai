@@ -1,2 +1,1 @@
-
-worker: java main.java
+web: gunicorn dep:app
