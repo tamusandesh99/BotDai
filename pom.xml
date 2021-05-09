@@ -13,7 +13,6 @@
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
         <maven.compiler.verbose>true</maven.compiler.verbose>
-        <maven.compiler.release>9</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -25,12 +24,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>9</release>
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                    </compilerArgs>
-                    <forceJavacCompilerUse>true</forceJavacCompilerUse>
-                    <parameters>true</parameters>
+                    <release>14</release>
                 </configuration>
             </plugin>
         </plugins>
