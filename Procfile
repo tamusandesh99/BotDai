@@ -1,2 +1,2 @@
-web: java -jar target/botdai-1.0.0.jar
-
+web: java $JAVA_OPTS -jar target/*.war
+heroku ps:scale web=1
