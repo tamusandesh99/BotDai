@@ -1,1 +1,1 @@
-worker: java -jar target/unnamed.jar
+worker: java -jar target/fourthTry.jar
