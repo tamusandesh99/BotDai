@@ -25,7 +25,6 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>14</release>
-                    <mainClass>Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
