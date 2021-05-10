@@ -16,7 +16,7 @@ public class register extends ListenerAdapter {
                 (messageReceive.equalsIgnoreCase(Main.prefix + "registertime")))) {
 
             int year = 2021;
-            int month = 4;
+            int month = 5;
             int day = 17;
             int hours = 8;
             int minutes = 0;

@@ -14,8 +14,8 @@ public class scrim extends ListenerAdapter {
         if (messageReceive.equalsIgnoreCase(Main.prefix + "scrimtime")) {
 
             int year = 2021;
-            int month = 4;
-            int day = 20;
+            int month = 6;
+            int day = 5;
             int hours = 0;
             int minutes = 0;
 
