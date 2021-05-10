@@ -25,7 +25,6 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>14</release>
-<!--                    <appName>${heroku.appName}</appName>-->
                 </configuration>
             </plugin>
         </plugins>
