@@ -14,9 +14,9 @@ public class scrim extends ListenerAdapter {
         if (messageReceive.equalsIgnoreCase(Main.prefix + "scrimtime")) {
 
             int year = 2021;
-            int month = 6;
-            int day = 5;
-            int hours = 0;
+            int month = 4;
+            int day = 18;
+            int hours = 14;
             int minutes = 0;
 
             while (day > 0) {
@@ -39,8 +39,31 @@ public class scrim extends ListenerAdapter {
                 } else if (noSec < -1 || noSec == 0) {
                     day = day + 7;
 
-                } else {
-                    event.getChannel().sendMessage("Time has expired").queue();
+                    if ((month == 4) || (month == 9) || (month == 6) || (month == 11)) {
+                        if (day > 30) {
+                            month = month + 1;
+                            day = (day + 7) - 30;
+                        }
+                    }
+                    else if(month == 2) {
+                        if (day > 28) {
+                            month = month + 1;
+                            day = (day + 7) - 28;
+                        }
+                    }
+                    else {
+                        if (day > 31) {
+                            month = month + 1;
+                            day = (day + 7) - 31;
+                        }
+                    }
+
+                    if(month > 12) {
+                        year = year + 1;
+                        month = 1;
+                        day = (day + 7) - 31;
+                    }
+
                 }
             }
 

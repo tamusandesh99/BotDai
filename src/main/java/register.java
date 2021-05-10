@@ -16,12 +16,12 @@ public class register extends ListenerAdapter {
                 (messageReceive.equalsIgnoreCase(Main.prefix + "registertime")))) {
 
             int year = 2021;
-            int month = 5;
+            int month = 4;
             int day = 17;
             int hours = 8;
             int minutes = 0;
 
-            while (day > 0) {
+            while (day < 32) {
 
                 DateTime dt1 = new DateTime();
                 DateTime dt2 = new DateTime(year, month, day, hours, minutes, 0, 0);
@@ -42,8 +42,30 @@ public class register extends ListenerAdapter {
                 } else if (noSec < -1 || noSec == 0) {
                     day = day + 7;
 
-                } else {
-                    event.getChannel().sendMessage("Time has expired").queue();
+                    if ((month == 4) || (month == 9) || (month == 6) || (month == 11)) {
+                        if (day > 30) {
+                            month = month + 1;
+                            day = (day + 7) - 30;
+                        }
+                    }
+                    else if(month == 2) {
+                        if (day > 28) {
+                            month = month + 1;
+                            day = (day + 7) - 28;
+                        }
+                    }
+                    else {
+                        if (day > 31) {
+                            month = month + 1;
+                            day = (day + 7) - 31;
+                        }
+                    }
+
+                    if(month > 12) {
+                        year = year + 1;
+                        month = 1;
+                       day = (day + 7) - 31;
+                    }
                 }
             }
         }
