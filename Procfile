@@ -1,1 +1,1 @@
-worker: java -jar target/fourthTry.jar
+worker: java -jar target/fourthTry-1.0-SNAPSHOT.jar
