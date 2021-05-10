@@ -50,6 +50,13 @@
             <name>m2-dv8ton</name>
             <url>https://m2.dv8tion.net/releases</url>
         </repository>
+            <repository>
+                <id>spring-snapshots</id>
+                <url>http://repo.spring.io/libs-snapshot</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
     </repositories>
 
 </project>
