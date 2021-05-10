@@ -9,22 +9,31 @@ public class commands extends ListenerAdapter {
 
         String messageReceive = event.getMessage().getContentRaw();
 
-        if (messageReceive.equalsIgnoreCase(Main.prefix + "ava")) {
-            event.getChannel().sendMessage("I love you bubu").queue();
+        if ((messageReceive.equalsIgnoreCase(Main.prefix + "ava") ||
+                (messageReceive.equalsIgnoreCase(Main.prefix + "Ava")))) {
+            event.getChannel().sendMessage("Big Fan Ava").queue();
         }
+
         if (messageReceive.equalsIgnoreCase(Main.prefix + "buddhaisgay")) {
             event.getChannel().sendMessage("No he is not.").queue();
-
         }
 
         if (messageReceive.equalsIgnoreCase(Main.prefix + "bubu")) {
-            event.getChannel().sendMessage("|| I love you scoopum scooopum ||").queue();
+            event.getChannel().sendMessage("|| Hehehehe ||").queue();
         }
 
-        if (messageReceive.equalsIgnoreCase(Main.prefix + "Andrew")) {
-            event.getChannel().sendMessage("GoodJob on Activity 6 code. Thank You.").queue();
+        if (messageReceive.equalsIgnoreCase(Main.prefix + "Gorilla") ||
+                (messageReceive.equalsIgnoreCase(Main.prefix + "gorilla"))){
+            event.getChannel().sendMessage("Tech doctor").queue();
         }
 
+        if (messageReceive.equalsIgnoreCase(Main.prefix + "help") ||
+                (messageReceive.equalsIgnoreCase(Main.prefix + "Help"))) {
+            String help = " `Type !registertime to see how much time is " +
+                    "left for registration to open `" +"\n" + " `Type !scrimtime to see " +
+                    "how much time is left for scrim to start. `";
+            event.getChannel().sendMessage(help).queue();
+        }
     }
 }
 
