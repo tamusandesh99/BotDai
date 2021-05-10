@@ -1,1 +1,1 @@
-worker: java -jar /Users/sandeshgrg75/Desktop/fourthTry/target/KK.jar
+worker: java -jar target/fourthTry-1.0-SNAPSHOT.jar
