@@ -25,6 +25,7 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>14</release>
+                    <mainClass>Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
@@ -50,12 +51,12 @@
             <name>m2-dv8ton</name>
             <url>https://m2.dv8tion.net/releases</url>
         </repository>
-            <repository>
-                <id>spring-snapshots</id>
-                <url>http://repo.spring.io/libs-snapshot</url>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
-            </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 </project>
