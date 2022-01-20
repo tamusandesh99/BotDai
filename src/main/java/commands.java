@@ -14,13 +14,6 @@ public class commands extends ListenerAdapter {
             event.getChannel().sendMessage("Big Fan Ava").queue();
         }
 
-        if (messageReceive.equalsIgnoreCase(Main.prefix + "buddhaisgay")) {
-            event.getChannel().sendMessage("No he is not.").queue();
-        }
-
-        if (messageReceive.equalsIgnoreCase(Main.prefix + "bubu")) {
-            event.getChannel().sendMessage("|| Hehehehe ||").queue();
-        }
 
         if (messageReceive.equalsIgnoreCase(Main.prefix + "Gorilla") ||
                 (messageReceive.equalsIgnoreCase(Main.prefix + "gorilla"))){
