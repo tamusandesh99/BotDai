@@ -8,7 +8,7 @@ public class Main {
     public static String prefix = "!";
 
     public static void main(String[] args) throws LoginException{
-        JDA jda = JDABuilder.createDefault("ODMwMTg3MTE4Mjk4MjY3Njc5.YHDCAQ.WLGB-ormFLnglpWNw-l2i8iFLqY").build();
+        JDA jda = JDABuilder.createDefault("BotID").build();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.watching("Tero bau ko tauko"));
         jda.addEventListener(new commands());
